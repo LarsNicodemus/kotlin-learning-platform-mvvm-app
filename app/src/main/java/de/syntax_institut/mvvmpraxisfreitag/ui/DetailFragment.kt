@@ -53,8 +53,10 @@ class DetailFragment : Fragment() {
     private fun updatePassedUI(passed: Boolean) {
         if (passed) {
             binding.cvDetailView.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.passed)
+            binding.btnComplete.setText(R.string.btn_complete)
         } else {
             binding.cvDetailView.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.white)
+            binding.btnComplete.setText(R.string.btn_notcomplete)
         }
     }
 

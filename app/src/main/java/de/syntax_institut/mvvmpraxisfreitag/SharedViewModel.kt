@@ -16,8 +16,8 @@ class SharedViewModel : ViewModel() {
     val courses: LiveData<List<Course>>
         get() = _courses
 
-    private var _selectedCourse = MutableLiveData<Course?>(courseList[position])
-    val selectedCourse: MutableLiveData<Course?>
+    private var _selectedCourse = MutableLiveData<Course>(courseList[position])
+    val selectedCourse: MutableLiveData<Course>
         get() = _selectedCourse
 
     fun selectCourse(newCourse: Course) {
@@ -35,7 +35,7 @@ class SharedViewModel : ViewModel() {
         val currentCourse = _selectedCourse.value
         if (currentCourse != null) {
             currentCourse.completed = !currentCourse.completed
-            _selectedCourse.value = currentCourse
+            _selectedCourse.value = currentCourse!!
         }
     }
 

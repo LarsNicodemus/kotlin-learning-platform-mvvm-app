@@ -4,6 +4,7 @@
     <string name="title">Syntax Institut</string>
     <string name="btn_back">ZURÜCK ZU DEN KURSEN</string>
     <string name="btn_complete">ABGESCHLOSSEN</string>
+    <string name="btn_notcomplete">ABSCHLIESSEN</string>
 
     <!-- title für kurse -->
     <string name="title_ui">UX / UI Design</string>
