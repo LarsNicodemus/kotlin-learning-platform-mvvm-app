@@ -30,6 +30,7 @@ class CourseAdapter(
     override fun onBindViewHolder(holder: CourseAdapter.CourseViewHolder, position: Int) {
         val course = courses[position]
         val binding = holder.binding
+
         binding.tvCourseName.setText(course.courseName)
         binding.ivCourse.setImageResource(course.coursePicture)
         if (course.completed){
@@ -39,9 +40,11 @@ class CourseAdapter(
             binding.ivCourseComplete.setColorFilter(
                 ContextCompat.getColor(binding.root.context, R.color.purple_200))
         }
-//        binding.ivCourseComplete.setOnClickListener {
-//            viewModel.completedCourseTwo()
-//        }
+        binding.ivCourseComplete.setOnClickListener {
+
+            viewModel.completedCoursethree(course)
+            notifyDataSetChanged()
+        }
         binding.cvCourse.setOnClickListener {
             viewModel.selectCourse(course)
             val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment()

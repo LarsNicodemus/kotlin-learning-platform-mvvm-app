@@ -38,5 +38,11 @@ class SharedViewModel : ViewModel() {
             _selectedCourse.value = currentCourse!!
         }
     }
+    fun completedCoursethree(couse: Course)  {
+        var currentCourse = couse
+        currentCourse = _selectedCourse.value!!
+        currentCourse.completed = !currentCourse.completed
+        _selectedCourse.value = currentCourse
+    }
 
 }
