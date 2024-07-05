@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">mvvm praxisfreitag</string>
     <string name="title_courses">Syntax Institut - Kurse</string>
-    <string name="syntax_title">ZURÜCK ZU DEN KURSEN</string>
+    <string name="title">Syntax Institut</string>
+    <string name="btn_back">ZURÜCK ZU DEN KURSEN</string>
+    <string name="btn_complete">ABGESCHLOSSEN</string>
 
     <!-- title für kurse -->
     <string name="title_ui">UX / UI Design</string>
@@ -14,4 +16,6 @@
     <string name="basics">Um dich in der vielfältigen Welt der App Entwicklung zurechtzufinden, bringen wir dir in diesem Modul alle nötigen Grundlagen bei. </string>
     <string name="android">Mit der Programmiersprache Kotlin und der Entwicklungsumgebung Android Studio wirst du in diesem Modul deine erste eigene Android-App entwickeln.</string>
     <string name="ios">Im vierten und letzten Modul unseres Kurses geht es darum, deine App auch in iOS umzusetzen. Du lernst die grundlegenden Unterschiede der Plattformen kennen und schließt das Modul mit deiner ersten eigenen iOS App ab.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
