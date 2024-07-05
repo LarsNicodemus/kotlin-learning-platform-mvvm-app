@@ -34,7 +34,7 @@ class DetailFragment : Fragment() {
             findNavController().navigateUp()
         }
         binding.btnComplete.setOnClickListener {
-            viewModel.completedCourse()
+            viewModel.completedCourseTwo()
         }
 
     }
